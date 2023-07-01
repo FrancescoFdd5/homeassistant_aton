@@ -84,7 +84,8 @@ class ApiCoordinator(DataUpdateCoordinator):
             # Name of the data. For logging purposes.
             name="Aton Storage",
             # Polling interval. Will only be polled if there are subscribers.
-            update_interval=timedelta(seconds=api.interval),
+            #update_interval=timedelta(seconds=api.interval),
+            update_interval=timedelta(seconds=5)
         )
         self.api = api
 
